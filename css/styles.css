@@ -2,4 +2,187 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
+@font-face {
+  font-family: "Neumann";
+  src: url("../fonts/td-neumann.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/td-neumann.eot?#iefix") format("embedded-opentype"), url("../fonts/td-neumann.ttf") format("truetype"), url("../fonts/td-neumann.woff") format("woff");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton Regular';
+  src: url("../fonts/Patron/Panton-Regular.eot");
+  src: url("../fonts/Patron/Panton-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Patron/Panton-Regular.woff") format("woff"), url("../fonts/Patron/Panton-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton ExtraBold';
+  src: url("../fonts/Patron/Panton-ExtraBold.eot");
+  src: url("../fonts/Patron/Panton-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Patron/Panton-ExtraBold.woff") format("woff"), url("../fonts/Patron/Panton-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Neumann", sans-serif;
+  color: #ffffff;
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 90px;
+  background: #fee593;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fee593), to(#fdbb2d));
+  background: linear-gradient(0deg, #fee593 0%, #fdbb2d 100%);
+  border-radius: 5px;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+  background-color: transparent;
+}
+
+.navbar__mobile {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navbar__phone {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar__worktime {
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  height: 80px;
+  width: 70px;
+}
+
+.logo__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 40px;
+}
+
+.logo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.logo__description {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar__phone {
+    font-size: 15px;
+  }
+}
+
+.hero {
+  background: url("../img/hero/hero_vazy.png") no-repeat center, url("../img/hero/hero_bg.png") no-repeat center;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 500px;
+}
+
+.hero__title {
+  padding-top: 60px;
+  position: static;
+  font-size: 72px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form {
+  text-align: center;
+}
+
+.form__title {
+  display: block;
+  position: static;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 60px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
